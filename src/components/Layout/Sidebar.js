@@ -205,7 +205,7 @@ const Sidebar = () => {
         ];
 
   const handleLogout = () => {
-    navigate.push("/login");
+    navigate("/login");
   };
 
   return (
