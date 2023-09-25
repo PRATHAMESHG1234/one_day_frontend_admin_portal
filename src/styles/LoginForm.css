@@ -1,0 +1,123 @@
+.login-container {
+  padding: 5% 10% 5% 10% ;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  
+  background-color: #202020;
+}
+
+
+
+
+.rectangle-container {
+  background-color: #252525;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  width: 90%;
+  margin-bottom: 2rem;
+  border-radius: 15px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:0 10px;
+
+}
+.logo-container >img{
+  height: 6rem;
+}
+
+
+
+.login-image {
+
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+   
+}
+.registration-image{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+   
+}
+.registration-image img{
+  height: 96vh;
+  max-height: 100%;
+  width: 100%;
+  border-top-right-radius: 15px; 
+  border-bottom-right-radius: 15px;
+}
+.login-image img {
+  height: 75vh;
+  max-height: 100%;
+  width: 100%;
+  border-top-right-radius: 15px; 
+  border-bottom-right-radius: 15px;
+}
+
+.login-form-container {
+  padding: 20px;
+ 
+  background-color: #252525;
+  width: 50%; 
+}
+
+.login-form {
+  padding: 20px;
+  margin-top: 53px;
+}
+
+.login-form h2{
+ 
+    font-size: 2rem;
+    font-family: "Playfair Display, serif";
+
+}
+.login-form h2 ,label,p{
+  text-align: center;
+  color: wheat;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+ 
+}
+
+.login-form .form-group label {
+  display: block;
+ 
+  
+}
+
+.login-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e4ae25;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
