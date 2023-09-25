@@ -11,6 +11,7 @@ import logo from "../../assets/logo.png";
 import TableData from "./TableData";
 import { Header } from "antd/es/layout/layout";
 import CreateProjectModal from "./Modal";
+import { useNavigate } from "react-router-dom";
 
 const { Sider } = Layout;
 
@@ -40,6 +41,8 @@ const Sidebar = () => {
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+
+  const navigate = useNavigate();
 
   const fetchData = async (option) => {
     setLoading(true);
@@ -201,6 +204,10 @@ const Sidebar = () => {
           },
         ];
 
+  const handleLogout = () => {
+    navigate.push("/login");
+  };
+
   return (
     <>
       {showModal && (
@@ -232,7 +239,11 @@ const Sidebar = () => {
             <Menu.Item key="contacts" icon={<PhoneOutlined />}>
               Contacts
             </Menu.Item>
-            <Menu.Item key="logout" icon={<LogoutOutlined />}>
+            <Menu.Item
+              key="logout"
+              icon={<LogoutOutlined />}
+              onClick={handleLogout}
+            >
               Logout
             </Menu.Item>
           </Menu>
