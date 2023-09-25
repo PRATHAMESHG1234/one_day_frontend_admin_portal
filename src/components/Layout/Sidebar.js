@@ -17,26 +17,7 @@ const { Sider } = Layout;
 
 const Sidebar = () => {
   const [selectedOption, setSelectedOption] = useState(null);
-  const [data, setData] = useState([
-    {
-      key: "1",
-      projectName: "Project 1",
-      projectType: "Type 1",
-      description: "Description 1",
-    },
-    {
-      key: "2",
-      projectName: "Project 2",
-      projectType: "Type 2",
-      description: "Description 2",
-    },
-    {
-      key: "3",
-      projectName: "Project 3",
-      projectType: "Type 3",
-      description: "Description 3",
-    },
-  ]);
+  const [data, setData] = useState([]);
 
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(false);
