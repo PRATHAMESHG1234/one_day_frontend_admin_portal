@@ -3,7 +3,7 @@ import { Form, Input, Button, Col } from "antd";
 import registrationImage from "../assets/login-c3b6c3aa.jpg";
 import logoImage from "../assets/logo.png";
 import "../styles/LoginForm.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios"; // Import Axios
 
 const Registration = () => {
@@ -14,6 +14,7 @@ const Registration = () => {
     phone: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const onFinish = async (values) => {
     try {
@@ -22,6 +23,7 @@ const Registration = () => {
       const response = await axios.post("/api/register", formData);
 
       console.log("Registration successful:", response.data);
+      navigate("/");
     } catch (error) {
       console.error("Registration failed:", error);
     }

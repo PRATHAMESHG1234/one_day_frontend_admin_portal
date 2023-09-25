@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Input, Button, Col } from "antd";
 import loginImage from "../assets/login-c3b6c3aa.jpg";
 import logoImage from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios"; // Import Axios
 
 import "../styles/LoginForm.css";
@@ -10,6 +10,7 @@ import "../styles/LoginForm.css";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const onFinish = async () => {
     try {
@@ -20,6 +21,7 @@ const Login = () => {
       });
 
       console.log("Login successful:", response.data);
+      navigate("/");
     } catch (error) {
       console.error("Login failed:", error);
     }
