@@ -16,7 +16,7 @@ const Registration = () => {
   });
   const navigate = useNavigate();
 
-  const onFinish = async (values) => {
+  const onFinish = async () => {
     try {
       console.log(formData);
 
@@ -79,6 +79,10 @@ const Registration = () => {
                     required: true,
                     message: "Please enter your email",
                   },
+                  {
+                    type: "email",
+                    message: "Please enter a valid email",
+                  },
                 ]}
               >
                 <Input
@@ -97,6 +101,10 @@ const Registration = () => {
                     required: true,
                     message: "Please enter your phone number",
                   },
+                  {
+                    pattern: /^\d{10}$/,
+                    message: "Please enter a valid 10-digit phone number",
+                  },
                 ]}
               >
                 <Input
@@ -114,6 +122,10 @@ const Registration = () => {
                   {
                     required: true,
                     message: "Please enter your password",
+                  },
+                  {
+                    min: 6,
+                    message: "Password must be at least 6 characters",
                   },
                 ]}
               >
