@@ -21,6 +21,8 @@ html, body {
     height: 64px;
     line-height: 64px;
     padding: 0 24px;
+    font-size: 2rem;
+    font-family: "Playfair Display, serif";
   }
   
 

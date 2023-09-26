@@ -321,8 +321,9 @@ const Sidebar = () => {
             theme="dark"
             className="custom-menu"
             onClick={handleMenuItemClick}
+            selectedKeys={selectedOption}
           >
-            <Menu.Item key="projects" icon={<AppstoreAddOutlined />}>
+            <Menu.Item key="projects" icon={<AppstoreAddOutlined />} active>
               Projects
             </Menu.Item>
             <Menu.Item key="contacts" icon={<PhoneOutlined />}>
@@ -339,7 +340,12 @@ const Sidebar = () => {
         </Sider>
 
         <Layout>
-          <Header className="header">Header</Header>
+          <Header className="header">
+            {" "}
+            <b>
+              <i>Vishaw Architect</i>
+            </b>{" "}
+          </Header>
           {data.length > 0 && (
             <TableData
               data={data}
