@@ -15,7 +15,7 @@ const TableData = ({
   showModal,
 }) => {
   const headerStyle = {
-    background: "#252525",
+    background: "#1F2D48",
     color: "white",
   };
 
@@ -55,7 +55,6 @@ const TableData = ({
                 columns={columns}
                 scroll={{ y: 400 }}
                 loading={loading}
-                // Apply the custom header style to the table columns
                 components={{
                   header: {
                     cell: (props) => <th {...props} style={headerStyle} />,

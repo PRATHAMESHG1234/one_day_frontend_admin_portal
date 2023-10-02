@@ -311,7 +311,7 @@ const Sidebar = () => {
         <Sider
           width={200}
           className="sider"
-          style={{ backgroundColor: "#252525" }}
+          style={{ backgroundColor: " #2c4876" }}
         >
           <div className="logo">
             <img src={logo} alt="Logo" />
@@ -343,7 +343,7 @@ const Sidebar = () => {
           <Header className="header">
             {" "}
             <b>
-              <i>Vishaw Architect</i>
+              <i>Codegen Technologies</i>
             </b>{" "}
           </Header>
           {data.length > 0 && (

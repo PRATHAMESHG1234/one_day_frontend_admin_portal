@@ -8,21 +8,21 @@
 
   overflow: hidden;
   
-  background-color: #202020;
+  background-color: #1F2D48;
 }
 
 
 
 
 .rectangle-container {
-  background-color: #252525;
+  background-color: #2c4876;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 50%;
-  width: 90%;
+  width: 90%; 
   margin-bottom: 2rem;
-  border-radius: 15px; 
+  border-radius: 15px 15px 15px 15px;; 
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
 }
 
@@ -31,12 +31,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding:0 10px;
-
-}
-.logo-container >img{
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 6rem;
+  width: 100%;
 }
+
+.logo-container > img {
+  height: 100%; 
+  object-fit: contain; 
+}
+
 
 
 
@@ -76,7 +83,7 @@
 .login-form-container {
   padding: 20px;
  
-  background-color: #252525;
+  background-color: #2c4876;
   width: 50%; 
 }
 

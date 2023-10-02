@@ -15,12 +15,13 @@ const Login = () => {
   const onFinish = async () => {
     try {
       console.log(email, password);
-      const response = await axios.post("/api/login", {
-        email,
-        password,
-      });
+      // const response =
+      //   //  await
+      //   axios.post("/api/login", {
+      //     email,
+      //     password,
+      //   });
 
-      console.log("Login successful:", response.data);
       navigate("/");
     } catch (error) {
       console.error("Login failed:", error);
@@ -49,7 +50,7 @@ const Login = () => {
                 name="email"
                 rules={[
                   {
-                    required: true,
+                    // required: true,
                     message: "Please enter your email",
                   },
                   {
@@ -69,7 +70,7 @@ const Login = () => {
                 name="password"
                 rules={[
                   {
-                    required: true,
+                    // required: true,
                     message: "Please enter your password",
                   },
                   {
